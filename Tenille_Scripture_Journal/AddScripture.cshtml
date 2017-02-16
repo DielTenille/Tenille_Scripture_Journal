@@ -28,39 +28,47 @@
 <head>
     <meta charset="utf-8" />
     <title>Add a Scripture</title>
+    <link href="/styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
 </head>
 <body>
-    <h1>Add a Scripture</h1>
-    @Html.ValidationSummary()
-    <form method="post">
-        <fieldset>
-            <legend>Favorite Scripture Information</legend>
-            <p>
-                <label for="book">Book:</label>
-                <input type="text" name="book" value="@Request.Form["book"]" />
-                @Html.ValidationMessage("book")
-            </p>
+    <header>
+        <h1>Add a Scripture</h1>
+        <hr />
+    </header>
+    
+    <article class="gridContent">
+        @Html.ValidationSummary()
+        <form method="post">
+            <fieldset>
+                <legend>Favorite Scripture Information</legend>
+                <p>
+                    <label for="book">Book:</label>
+                    <input type="text" name="book" value="@Request.Form["book"]" />
+                    @Html.ValidationMessage("book")
+                </p>
 
-            <p>
-                <label for="chapter">Chapter:</label>
-                <input type="text" name="chapter" value="@Request.Form["chapter"]" />
-                @Html.ValidationMessage("chapter")
-            </p>
+                <p>
+                    <label for="chapter">Chapter:</label>
+                    <input type="text" name="chapter" value="@Request.Form["chapter"]" />
+                    @Html.ValidationMessage("chapter")
+                </p>
 
-            <p>
-                <label for="verse">Verse:</label>
-                <input type="text" name="verse" value="@Request.Form["verse"]" />
-                @Html.ValidationMessage("verse")
-            </p>
+                <p>
+                    <label for="verse">Verse:</label>
+                    <input type="text" name="verse" value="@Request.Form["verse"]" />
+                    @Html.ValidationMessage("verse")
+                </p>
 
-            <p>
-                <label for="note">Note:</label>
-                <input type="text" name="note" value="@Request.Form["note"]" />
-                @Html.ValidationMessage("note")
-            </p>
+                <p>
+                    <label for="note">Note:</label>
+                    <input type="text" name="note" value="@Request.Form["note"]" />
+                    @Html.ValidationMessage("note")
+                </p>
 
-            <p><input type="submit" name="buttonSubmit" value="Add Scripture" /></p>
-        </fieldset>
-    </form>
+                <p><input type="submit" name="buttonSubmit" value="Add Scripture" /></p>
+            </fieldset>
+        </form>
+        </article>
 </body>
 </html>

@@ -63,40 +63,48 @@
 <head>
     <meta charset="utf-8" />
     <title>Edit Scripture</title>
+    <link href="/styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Edit Scripture</h1>
-    @Html.ValidationSummary()
-    <form method="post">
-        <fieldset>
-            <legend>Scripture Information</legend>
+    <header>
+        <h1>Edit Scripture</h1>
+        <hr />
+    </header>
+    
+    <article class="gridContent">
+        @Html.ValidationSummary()
+        <form method="post">
+            <fieldset>
+                <legend>Scripture Information</legend>
 
-            <p>
-                <label for="book">Book:</label>
-                <input type="text" name="book" value="@book" />
-            </p>
+                <p>
+                    <label for="book">Book:</label>
+                    <input type="text" name="book" value="@book" />
+                </p>
 
-            <p>
-                <label for="chapterEntered">Chapter:</label>
-                <input type="text" name="chapterEntered" value="@chapterEntered" />
-            </p>
+                <p>
+                    <label for="chapterEntered">Chapter:</label>
+                    <input type="text" name="chapterEntered" value="@chapterEntered" />
+                </p>
 
-            <p>
-                <label for="verseEntered">Verse:</label>
-                <input type="text" name="verseEntered" value="@verseEntered" />
-            </p>
+                <p>
+                    <label for="verseEntered">Verse:</label>
+                    <input type="text" name="verseEntered" value="@verseEntered" />
+                </p>
 
-            <p>
-                <label for="note">Note:</label>
-                <input size= "50" type="text" name="note" value="@note" />
-            </p>
+                <p>
+                    <label for="note">Note:</label>
+                    <input size="50" type="text" name="note" value="@note" />
+                </p>
 
-            <input type="hidden" name="scriptureid" value="@scriptureID" />
+                <input type="hidden" name="scriptureid" value="@scriptureID" />
 
-            <p><input type="submit" name="buttonSubmit" value="Submit Changes" /></p>
-        </fieldset>
-    </form>
-    <p><a href="~/ScriptureHome">Return to scripture home page</a></p>
+                <p><input type="submit" name="buttonSubmit" value="Submit Changes" /></p>
+            </fieldset>
+        </form>
+        <p><a href="~/ScriptureHome">Return to scripture home page</a></p>
+    </article>
 </body>
 </html>

@@ -49,11 +49,11 @@ article::after {
     font-size: 120%;
     border: 1px solid #f1d7d7;
 }
-.webgrid a {
+.webgrid th a {
     color: white;
     text-decoration: none;
 }
-.webgrid a:visited {
+.webgrid-footer a:visited {
     color: white;
 }
 .webgrid-footer {
@@ -71,7 +71,7 @@ article::after {
 .webgrid-footer a:focus {
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: #BD3B3B;
 }
 .webgrid .alt {
     background-color: #f1d7d7;
@@ -91,7 +91,14 @@ article::after {
             font-weight: bold;
             margin: 12px;
         }
-
+a {
+    color: black;
+    text-decoration: underline;
+}
+a:visited {
+    color: black;
+    text-decoration: underline;
+}
 
     /* For Large Screens */
 @media only screen and (min-width: 768px) {

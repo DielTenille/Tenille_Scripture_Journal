@@ -130,6 +130,7 @@
     </Content>
     <Content Include="AddScripture.cshtml" />
     <Content Include="EditScripture.cshtml" />
+    <Content Include="DeleteScripture.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
