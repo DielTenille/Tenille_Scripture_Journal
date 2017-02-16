@@ -1,0 +1,129 @@
+﻿/*@import url('https://fonts.googleapis.com/css?family=Risque');*/
+
+/* For Small Screens */
+h1 {
+    font-family: 'Risque', cursive;
+    color: #FEF33A;
+    font-size: 50px;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    width: 100%;
+    background-image: url("https://i.ytimg.com/vi/K4wLeyXuKao/maxresdefault.jpg");
+    width: 100%;
+    height: auto;
+}
+header {
+    background-color: #BD3B3B;
+    width: auto;
+    padding: 3%;
+    text-align: right;
+}
+
+article {
+    background-color: #FDFDFD;
+    width: 70%;
+    padding: 5%;
+    padding-top: 1%;
+    margin: 5%;
+    box-shadow: 3px 3px 1px #583C3F;
+}
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.webgrid {
+    width: 95%;
+    padding: 2%;
+    text-align: left;
+    margin: 0 auto;
+}
+.webgrid thead{
+    background-color: #BD3B3B;
+    color: white;
+}
+.webgrid th, .webgrid td{
+    padding: 1%;
+    font-size: 120%;
+    border: 1px solid #f1d7d7;
+}
+.webgrid a {
+    color: white;
+    text-decoration: none;
+}
+.webgrid a:visited {
+    color: white;
+}
+.webgrid-footer {
+    background-color: #BD3B3B;
+    color: white;
+    
+}
+.webgrid-footer a {
+    background-color: #BD3B3B;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.webgrid-footer a:focus {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.webgrid .alt {
+    background-color: #f1d7d7;
+    color: #000;
+
+}
+ .field-validation-error {
+            font-weight: bold;
+            color: red;
+            background-color: #FFFFCC;
+        }
+
+        .validation-summary-errors {
+            border: 2px dashed red;
+            color: red;
+            background-color: #FFFFCC;
+            font-weight: bold;
+            margin: 12px;
+        }
+
+
+    /* For Large Screens */
+@media only screen and (min-width: 768px) {
+    /*header {
+        float: left;
+        width: 20%;
+        height: 100%;
+        position: fixed;
+    }*/ 
+    h1 {
+    font-size: 65px;
+    text-align: center;
+    }
+}
+
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr{
+    height: 30px;
+    border-style: solid;
+    border-color: #FEF33A;
+    border-width: 3px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #FEF33A;
+    border-width: 0 0 3px 0;
+    border-radius: 20px;
+}
