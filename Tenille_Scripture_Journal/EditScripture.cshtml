@@ -52,7 +52,7 @@
         if (Validation.IsValid())
         {
             var db = Database.Open("ScriptureNotes");
-            var updateCommand = "UPDATE Scripture SET Book=@0, Chapter=@1, Verse=@2, Note=@3, WHERE Id=@4";
+            var updateCommand = "UPDATE Scripture SET Book=@0, Chapter=@1, Verse=@2, Note=@3 WHERE Id=@4";
             db.Execute(updateCommand, book, chapter, verse, note, scriptureID);
             Response.Redirect("~/ScriptureHome");
         }
