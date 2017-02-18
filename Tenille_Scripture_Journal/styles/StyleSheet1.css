@@ -11,6 +11,7 @@ body {
     margin: 0px;
     width: 100%;
     background-image: url("https://i.ytimg.com/vi/K4wLeyXuKao/maxresdefault.jpg");
+    background-attachment: fixed;
     width: 100%;
     height: auto;
 }
@@ -46,7 +47,7 @@ article::after {
 }
 .webgrid th, .webgrid td{
     padding: 1%;
-    font-size: 120%;
+    font-size: 100%;
     border: 1px solid #f1d7d7;
 }
 .webgrid th a {
@@ -98,6 +99,20 @@ a {
 a:visited {
     color: black;
     text-decoration: underline;
+}
+form {
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-section {
+    margin-bottom: 1%;
+}
+form label {
+    padding-right: 1%;
+}
+input {
+    border-radius: 5px;
+    padding: .25%;
 }
 
     /* For Large Screens */
